@@ -25,3 +25,5 @@ https://stackoverflow.com/questions/76694890/how-to-resolve-failed-to-read-docke
 https://stackoverflow.com/questions/41928729/docker-failed-to-register-layer
 
 https://github.com/fb0801/python-microservice
+
+https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/
