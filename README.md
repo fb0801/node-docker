@@ -8,7 +8,7 @@ Node docker project
 ## Issues:
 
 - Ensure virtualisation is enabled
-- 
+- Ensure you hve enough storage on machine
 
 
 ## Resources used:
