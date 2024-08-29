@@ -9,6 +9,7 @@ Node docker project
 
 - Ensure virtualisation is enabled
 - Ensure you have enough storage on machine
+- mongo -u "" -p "" is decripted, instead use -> mongosh -u "" -p ""
 
 
 ## Resources used:
