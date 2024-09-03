@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const app = express();
 
 
-mongoose.connect("mongodb://nahraf:FOSSIL@172.21.0.2:27017/?authSource=admin")
+mongoose.connect("mongodb://nahraf:FOSSIL@mongo:27017/?authSource=admin")
 .then(() => console.log("successfully connected to DB"))
     .catch((e) =>console.log(e));
 

@@ -31,3 +31,5 @@ https://github.com/fb0801/python-microservice
 https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/
 
 https://www.w3schools.com/mongodb/mongodb_mongosh_insert.php
+
+https://codeforgeek.com/nodemon-app-crashed-waiting-for-file-changes-before-starting/
