@@ -8,7 +8,9 @@ Node docker project
 ## Issues:
 
 - Ensure virtualisation is enabled
-- Ensure you hve enough storage on machine
+- Ensure you have enough storage on machine
+- mongo -u "" -p "" is decripted, instead use -> mongosh -u "" -p ""
+- insert decripted use -> insertOne instead
 
 
 ## Resources used:
@@ -27,3 +29,5 @@ https://stackoverflow.com/questions/41928729/docker-failed-to-register-layer
 https://github.com/fb0801/python-microservice
 
 https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/
+
+https://www.w3schools.com/mongodb/mongodb_mongosh_insert.php
