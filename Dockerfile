@@ -5,7 +5,7 @@ RUN npm install
 
 ARG NODE_ENV
 RUN if [ "NODE_ENV" = "development" ]; \
-        then npm installl \
+        then npm install; \
         else npm install --only=production; \
         fi
 
