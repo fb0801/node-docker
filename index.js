@@ -7,15 +7,19 @@ const app = express();
 
 const mongoURL = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`;
 
+const connectWithRetry = () => {
+    mongoose.connect(mongoURL, {
+        useNewURLParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false
+    })
+    .then(() => console.log("successfully connected to DB"))
+    .catch((e) => { console.log(e)
+    setTimeout(connectWithRetry, 5000)
+});
+}
 
-mongoose.connect(mongoURL, {
-    useNewURLParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-})
-.then(() => console.log("successfully connected to DB"))
-.catch((e) =>console.log(e));
-
+connectWithRetry();
 
 app.get("/", (req, res) => {
     res.send("<h2>Hi There Everybody!!!!</h2>")
