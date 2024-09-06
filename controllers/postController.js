@@ -60,3 +60,24 @@ exports.createPost = async (req, res, next) => {
         })
     }
 }
+
+exports.updatePost = async (req, res, next) => {
+    try{
+        const post = await Post.findByIdAndUpdate(req.params.id, req.body, {
+            
+        })
+
+        res.status(200).json({
+            status: "success",
+
+            data: {
+                post,
+
+            },
+        })
+    } catch (e){
+        res.status(400).json({
+            status:"fail",
+        })
+    }
+}
