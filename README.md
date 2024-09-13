@@ -1,6 +1,8 @@
 # node-docker
 Node docker project
 
+A project where we learn how to use Docker with Node, Express, MongoDD and Redis
+
 
 ## Changes made:
 
