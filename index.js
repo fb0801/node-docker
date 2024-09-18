@@ -42,9 +42,10 @@ app.use(session({
             resave: false,
             saveUninitialized,
             httpOnly: true,
-            maxAge: 30000
-        }
-}))
+            maxAge: 3000000,
+        },
+    })
+)
 
 app.use(express.json())
 
