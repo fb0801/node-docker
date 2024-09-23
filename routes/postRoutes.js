@@ -7,13 +7,13 @@ const protect = require("../middleware/authMiddleware")
 const router = express.Router()
 
 router.route("/")
-.get(postController.getAllPosts)
+.get(protect, postController.getAllPosts)
 .post(protect, postController.createPost)
 
 router.route("/:id")
-.get(postController.getOnePost)
-.patch(postController.updatePost)
-.delete(postController.deletePost);
+.get(protect, postController.getOnePost)
+.patch(protect, postController.updatePost)
+.delete(protect, postController.deletePost);
 
 
 module.exports = router;
